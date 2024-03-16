@@ -231,5 +231,5 @@ const usersMockData = [
   },
 ];
 
-// console.log (usersMockData.map((a) => a.phone).slice(-6))
+console.log (usersMockData.map((a) => a.phone).slice(-6))
 console.log (usersMockData.filter((a) => a.id > 8 ).map((a) => a.name))

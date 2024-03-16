@@ -1,4 +1,4 @@
-// Speed limit 
+// Speed limit
 
 // function speedLimit() {
 
@@ -17,8 +17,6 @@
 // }
 
 // speedLimit (speed = 100);
-
-
 
 // Testing temperature of the room with 3 cases
 
@@ -39,8 +37,6 @@
 
 // TestingTemperature("5-degree")
 
-
-
 //
 
 // for / loop
@@ -50,8 +46,7 @@
 //   }
 //   for (let i = 0; i < 3; i++) {
 //     step();
-//   }  
-
+//   }
 
 //sleeping hour
 
@@ -64,7 +59,7 @@
 //          case "7-hours":
 //             console.log("It's normal!")
 //             break;
-        
+
 //         case "11-hours":
 //             console.log ("No more than it!")
 //             break;
@@ -73,9 +68,7 @@
 
 // testSleepingHour(hour = "11-hours");
 
-
 //Iphone price list
-
 
 // function IphonePriceList(){
 //     switch (price) {
@@ -100,15 +93,11 @@
 
 // IphonePriceList(price = "Iphone 15 pro max")
 
-
-
 // Voting
 
 // const age = 17
 // const votingAge = age < 18 ? "You can not vote sorry!" : "Thanks for voting"
 // console.log (votingAge)
-
-
 
 //do / while
 
@@ -124,11 +113,9 @@
 //     break;
 // } while (weather > 18)
 
-
 // array
 
-
-// let FruitList = ["Orange", "Pineapple", "Banana", "Apple"] 
+// let FruitList = ["Orange", "Pineapple", "Banana", "Apple"]
 
 // console.log (FruitList);
 
@@ -144,14 +131,11 @@
 // console.log (FruitList.shift()) // to delete " " from the start
 // console.log (FruitList)
 
-// console.log (FruitList.splice(3)) // to splice from-to. 
+// console.log (FruitList.splice(3)) // to splice from-to.
 // console.log (FruitList)
 
-
-
-// let FruitList = ["Orange", "Pineapple", "Banana", "Apple"] 
+// let FruitList = ["Orange", "Pineapple", "Banana", "Apple"]
 // let VegetablesList = ["Carrot", "Potato", "Onion"]
-
 
 // console.log (FruitList)
 // console.log (VegetablesList)
@@ -161,7 +145,6 @@
 // console.log (FruitList.concat(VegetablesList).sort()) //to sort "A, B, C"
 
 // console.log (FruitList.join(" aa ")) //adding " " to the between of each array, and counts each index
-
 
 ///
 
@@ -196,7 +179,6 @@
 
 // };
 
-
 ///
 
 // let phoneModels =[ "Apple", "Samsung", "Motorola", "Huawei"]
@@ -210,8 +192,6 @@
 // console.log (phoneModels)
 
 // console.log (phoneModels.sort())
-
-
 
 ///
 
@@ -231,34 +211,74 @@
 
 // console.log (names.sort().join(" "))
 
+///
+
+// const subjects = [
+//   "Math",
+//   "Econimic in Dealy Life",
+//   "International Comminucations",
+//   "International Trade and Commerce",
+// ];
+// const schedule = ["Monday", "Tuesday", "Friday", "Sunday"];
+
+// console.log(subjects.shift());
+// // console.log (subjects)
+
+// console.log(schedule.pop());
+// // console.log (schedule)
+
+// function ChekingSub(schedule) {
+//   switch (schedule) {
+//     case "Monday":
+//       console.log(subjects.slice(0, 1));
+//       break;
+
+//     case "Tuesday":
+//       console.log(subjects.slice(1, 2));
+//       break;
+
+//     case "Friday":
+//       console.log(subjects.slice(-1));
+//   }
+// }
+
+// ChekingSub("Friday");
+
 
 ///
 
+// const StudentList = {
+//     scStudents: [
+//         {
+//             name: "Rahmatulloh",
+//             age: 21,
+//         },
+//         {
+//             name: "Sarvar",
+//             age: 20,
+//         },
+//         {
+//             name: "Abc",
+//         },
+//     ],
 
-const subjects = ["Math", "Econimic in Dealy Life", "International Comminucations", "International Trade and Commerce"]
-const schedule = [ "Monday", "Tuesday", "Friday", "Sunday"]
+// };
 
-console.log (subjects.shift())
-// console.log (subjects)
-
-console.log (schedule.pop())
-// console.log (schedule)
+// console.log (StudentList.scStudents.map((a) => a.name))   //to search an object from array
+// console.log (StudentList.scStudents.filter((b) => b.age > 20))   //to filter objects 
+// console.log (StudentList.scStudents.sort((a, b)=> a.name.localeCompare(b.name)))   //to sort
 
 
-function ChekingSub(schedule){
-switch (schedule){
-    case "Monday":
-        console.log (subjects.slice(0,1))
-        break;
+// let name = `Rahmatullo`
 
-    case "Tuesday":
-        console.log (subjects.slice(1,2))
-        break;
+// console.log (`My name is ${name}`)
 
-    case "Friday":
-        console.log (subjects.slice(-1))
+const StudentList2 = {
+    name: "Rahmatullo",
+    age: 21,
+    bio: function(){
+        console.log (`${this.name}, ${this.age}`);
+    }
 }
-}
 
-ChekingSub("Friday")
-
+console.log (StudentList2.bio())
